@@ -1,0 +1,63 @@
+{
+  "agent_name": "Insight Generator",
+  "agent_id": "696eea103bd35d7a6606a53c",
+  "test_message": "Analyze trends: 10 positive responses this week, 3 mentioned pricing concerns, 5 booked meetings",
+  "expected_purpose": "insight_generation",
+  "timestamp": "2026-01-20T02:45:27.290739",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "strategic_insights": [
+        {
+          "insight": "Positive response rate indicates potential interest in current offerings, but pricing remains a concern.",
+          "category": "messaging",
+          "impact": "medium",
+          "confidence": 85,
+          "supporting_data": [
+            "10 positive responses",
+            "3 pricing concerns"
+          ]
+        }
+      ],
+      "patterns_identified": {
+        "winning_patterns": [
+          {
+            "pattern": "Booking meetings with prospects who initially respond positively.",
+            "frequency": 5,
+            "success_rate": 50
+          }
+        ],
+        "losing_patterns": [
+          {
+            "pattern": "Pricing concerns raised despite positive initial responses.",
+            "frequency": 3,
+            "failure_rate": 30
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "recommendation": "Address pricing concerns directly in follow-up communications to improve conversion rates.",
+          "action_items": [
+            "Revise follow-up scripts to include pricing clarity",
+            "Offer pricing incentives for early commitment"
+          ],
+          "priority": "high",
+          "expected_impact": "Increased conversion rate and improved customer retention"
+        }
+      ],
+      "performance_metrics": {
+        "response_rate_trend": "improving",
+        "conversion_trend": "stable",
+        "engagement_score": 75
+      }
+    },
+    "metadata": {
+      "agent_name": "Insight Generator",
+      "timestamp": "2023-11-24T10:05:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"strategic_insights\": [\n      {\n        \"insight\": \"Positive response rate indicates potential interest in current offerings, but pricing remains a concern.\",\n        \"category\": \"messaging\",\n        \"impact\": \"medium\",\n        \"confidence\": 85,\n        \"supporting_data\": [\"10 positive responses\", \"3 pricing concerns\"]\n      }\n    ],\n    \"patterns_identified\": {\n      \"winning_patterns\": [\n        {\n          \"pattern\": \"Booking meetings with prospects who initially respond positively.\",\n          \"frequency\": 5,\n          \"success_rate\": 50\n        }\n      ],\n      \"losing_patterns\": [\n        {\n          \"pattern\": \"Pricing concerns raised despite positive initial responses.\",\n          \"frequency\": 3,\n          \"failure_rate\": 30\n        }\n      ]\n    },\n    \"recommendations\": [\n      {\n        \"recommendation\": \"Address pricing concerns directly in follow-up communications to improve conversion rates.\",\n        \"action_items\": [\"Revise follow-up scripts to include pricing clarity\", \"Offer pricing incentives for early commitment\"],\n        \"priority\": \"high\",\n        \"expected_impact\": \"Increased conversion rate and improved customer retention\"\n      }\n    ],\n    \"performance_metrics\": {\n      \"response_rate_trend\": \"improving\",\n      \"conversion_trend\": \"stable\",\n      \"engagement_score\": 75\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Insight Generator\",\n    \"timestamp\": \"2023-11-24T10:05:00Z\"\n  }\n}"
+}

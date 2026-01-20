@@ -1,0 +1,77 @@
+{
+  "agent_name": "Committee Mapper",
+  "agent_id": "696ee98e3bd35d7a6606a530",
+  "test_message": "Map buying committee for Acme Corp - identify decision makers",
+  "expected_purpose": "buying_committee_mapping",
+  "timestamp": "2026-01-20T02:49:40.159306",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "company": "acme.com",
+      "buying_committee": {
+        "decision_makers": [
+          {
+            "name": "John Doe",
+            "title": "CTO",
+            "linkedin": "linkedin.com/in/johndoe",
+            "influence_score": 95
+          },
+          {
+            "name": "Emily Clarke",
+            "title": "CFO",
+            "linkedin": "linkedin.com/in/emilyclarke",
+            "influence_score": 90
+          },
+          {
+            "name": "Michael Smith",
+            "title": "CEO",
+            "linkedin": "linkedin.com/in/michaelsmith",
+            "influence_score": 95
+          }
+        ],
+        "influencers": [
+          {
+            "name": "Jane Smith",
+            "title": "VP Engineering",
+            "linkedin": "linkedin.com/in/janesmith",
+            "influence_score": 80
+          }
+        ],
+        "champions": [
+          {
+            "name": "Bob Johnson",
+            "title": "Engineering Manager",
+            "reason": "Previously used similar tools",
+            "influence_score": 60
+          }
+        ],
+        "blockers": [
+          {
+            "name": "Alice Brown",
+            "title": "Procurement Director",
+            "reason": "Budget gatekeeper",
+            "influence_score": 70
+          }
+        ]
+      },
+      "org_structure": {
+        "total_employees": 500,
+        "engineering_team_size": 50,
+        "reporting_hierarchy": "CTO -> VP Eng -> Eng Managers"
+      },
+      "engagement_strategy": "Target CTO and CFO first, build champion relationship with Eng Manager"
+    },
+    "metadata": {
+      "agent_name": "Committee Mapper",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.85,
+      "data_sources": [
+        "Apollo API",
+        "LinkedIn"
+      ]
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"company\": \"acme.com\",\n    \"buying_committee\": {\n      \"decision_makers\": [\n        {\"name\": \"John Doe\", \"title\": \"CTO\", \"linkedin\": \"linkedin.com/in/johndoe\", \"influence_score\": 95},\n        {\"name\": \"Emily Clarke\", \"title\": \"CFO\", \"linkedin\": \"linkedin.com/in/emilyclarke\", \"influence_score\": 90},\n        {\"name\": \"Michael Smith\", \"title\": \"CEO\", \"linkedin\": \"linkedin.com/in/michaelsmith\", \"influence_score\": 95}\n      ],\n      \"influencers\": [\n        {\"name\": \"Jane Smith\", \"title\": \"VP Engineering\", \"linkedin\": \"linkedin.com/in/janesmith\", \"influence_score\": 80}\n      ],\n      \"champions\": [\n        {\"name\": \"Bob Johnson\", \"title\": \"Engineering Manager\", \"reason\": \"Previously used similar tools\", \"influence_score\": 60}\n      ],\n      \"blockers\": [\n        {\"name\": \"Alice Brown\", \"title\": \"Procurement Director\", \"reason\": \"Budget gatekeeper\", \"influence_score\": 70}\n      ]\n    },\n    \"org_structure\": {\n      \"total_employees\": 500,\n      \"engineering_team_size\": 50,\n      \"reporting_hierarchy\": \"CTO -> VP Eng -> Eng Managers\"\n    },\n    \"engagement_strategy\": \"Target CTO and CFO first, build champion relationship with Eng Manager\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Committee Mapper\",\n    \"timestamp\": \"2026-01-20T10:00:00Z\",\n    \"confidence\": 0.85,\n    \"data_sources\": [\"Apollo API\", \"LinkedIn\"]\n  }\n}"
+}

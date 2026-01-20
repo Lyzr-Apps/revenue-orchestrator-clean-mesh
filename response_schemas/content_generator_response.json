@@ -1,0 +1,141 @@
+{
+  "agent_name": "Content Generator",
+  "agent_id": "696ee9b5b50537828e0aff69",
+  "agent_purpose": "recommendation",
+  "description": "Generates personalized outreach content including emails and LinkedIn messages",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "generated_content": {
+        "subject_line": "string",
+        "email_body": "string",
+        "linkedin_message": "string",
+        "call_to_action": "string"
+      },
+      "personalization_elements": {
+        "company_specific": [
+          "string"
+        ],
+        "role_specific": [
+          "string"
+        ],
+        "pain_point_addressed": [
+          "string"
+        ]
+      },
+      "content_variants": [
+        {
+          "variant_type": "string",
+          "subject": "string",
+          "preview": "string"
+        }
+      ],
+      "optimization_score": "number",
+      "suggested_send_time": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "generated_content": {
+        "subject_line": "Enhancing Sales Efficiency Together",
+        "email_body": "Hi [Name],\n\nI recently came across your work as the VP of Sales and was truly impressed by your focus on driving sales effectiveness. I believe we share a mutual interest in optimizing sales processes and would love to connect to explore potential synergies.\n\nBest regards,\n[Your Name]",
+        "linkedin_message": "Hi [Name],\n\nI've been following your leadership in improving sales efficiency and would love to connect to learn more and share insights on enhancing sales performance.\n\nLooking forward to connecting,\n[Your Name]",
+        "call_to_action": "Connect with me on LinkedIn to discuss sales efficiency strategies."
+      },
+      "personalization_elements": {
+        "company_specific": [
+          "VP Sales at [Company]",
+          "Focus on sales effectiveness"
+        ],
+        "role_specific": [
+          "Leadership in sales processes",
+          "Experience in driving sales efficiency"
+        ],
+        "pain_point_addressed": [
+          "Optimizing sales processes",
+          "Enhancing sales performance"
+        ]
+      },
+      "content_variants": [
+        {
+          "variant_type": "formal",
+          "subject": "Enhancing Sales Efficiency",
+          "preview": "Hi [Name], I've been following your leadership in improving sales efficiency..."
+        },
+        {
+          "variant_type": "casual",
+          "subject": "Connecting with a Sales Efficiency Expert",
+          "preview": "Hey [Name], I'd love to connect and chat about boosting sales efficiency..."
+        },
+        {
+          "variant_type": "direct",
+          "subject": "Let's Discuss Sales Efficiency",
+          "preview": "Hi [Name], Let's connect to discuss sales performance strategies..."
+        }
+      ],
+      "optimization_score": 87,
+      "suggested_send_time": "Tuesday 10:00 AM"
+    },
+    "metadata": {
+      "agent_name": "Content Generator",
+      "timestamp": "2023-11-04T15:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:44:56.282725",
+  "test_message_used": "Provide sample recommendations for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "generated_content": {
+        "subject_line": "Enhancing Sales Efficiency Together",
+        "email_body": "Hi [Name],\n\nI recently came across your work as the VP of Sales and was truly impressed by your focus on driving sales effectiveness. I believe we share a mutual interest in optimizing sales processes and would love to connect to explore potential synergies.\n\nBest regards,\n[Your Name]",
+        "linkedin_message": "Hi [Name],\n\nI've been following your leadership in improving sales efficiency and would love to connect to learn more and share insights on enhancing sales performance.\n\nLooking forward to connecting,\n[Your Name]",
+        "call_to_action": "Connect with me on LinkedIn to discuss sales efficiency strategies."
+      },
+      "personalization_elements": {
+        "company_specific": [
+          "VP Sales at [Company]",
+          "Focus on sales effectiveness"
+        ],
+        "role_specific": [
+          "Leadership in sales processes",
+          "Experience in driving sales efficiency"
+        ],
+        "pain_point_addressed": [
+          "Optimizing sales processes",
+          "Enhancing sales performance"
+        ]
+      },
+      "content_variants": [
+        {
+          "variant_type": "formal",
+          "subject": "Enhancing Sales Efficiency",
+          "preview": "Hi [Name], I've been following your leadership in improving sales efficiency..."
+        },
+        {
+          "variant_type": "casual",
+          "subject": "Connecting with a Sales Efficiency Expert",
+          "preview": "Hey [Name], I'd love to connect and chat about boosting sales efficiency..."
+        },
+        {
+          "variant_type": "direct",
+          "subject": "Let's Discuss Sales Efficiency",
+          "preview": "Hi [Name], Let's connect to discuss sales performance strategies..."
+        }
+      ],
+      "optimization_score": 87,
+      "suggested_send_time": "Tuesday 10:00 AM"
+    },
+    "metadata": {
+      "agent_name": "Content Generator",
+      "timestamp": "2023-11-04T15:00:00Z"
+    }
+  },
+  "test_passed": true
+}

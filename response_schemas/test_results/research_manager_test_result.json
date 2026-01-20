@@ -1,0 +1,59 @@
+{
+  "agent_name": "Research Manager",
+  "agent_id": "696eeaf33bd35d7a6606a54c",
+  "test_message": "Research Acme Corp - tech stack, buying committee, ICP fit",
+  "expected_purpose": "research_coordinator",
+  "timestamp": "2026-01-20T02:49:26.004126",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "research_summary": {
+        "company": "acme.com",
+        "icp_qualification": {
+          "matches_icp": true,
+          "score": 85,
+          "key_factors": [
+            "Revenue over $1B",
+            "Market leader in technology sector"
+          ]
+        },
+        "tech_stack": {
+          "technologies": [
+            "Salesforce",
+            "AWS",
+            "Docker"
+          ],
+          "integration_opportunities": [
+            "Advanced analytics integration",
+            "Cloud optimization services"
+          ]
+        },
+        "buying_committee": {
+          "decision_makers": [
+            "John Doe - CTO",
+            "Jane Smith - CFO"
+          ],
+          "org_chart_insights": "Direct reporting line between CTO and CEO ensures streamlined decision making"
+        }
+      },
+      "delegated_agents": [
+        "ICP Qualifier",
+        "Technographic Agent",
+        "Committee Mapper"
+      ],
+      "confidence_score": 0.85,
+      "next_steps": [
+        "Reach out to CTO for integration discussion",
+        "Prepare proposal highlighting analytics integration"
+      ]
+    },
+    "metadata": {
+      "agent_name": "Research Manager",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.9
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"research_summary\": {\n      \"company\": \"acme.com\",\n      \"icp_qualification\": {\n        \"matches_icp\": true,\n        \"score\": 85,\n        \"key_factors\": [\"Revenue over $1B\", \"Market leader in technology sector\"]\n      },\n      \"tech_stack\": {\n        \"technologies\": [\"Salesforce\", \"AWS\", \"Docker\"],\n        \"integration_opportunities\": [\"Advanced analytics integration\", \"Cloud optimization services\"]\n      },\n      \"buying_committee\": {\n        \"decision_makers\": [\"John Doe - CTO\", \"Jane Smith - CFO\"],\n        \"org_chart_insights\": \"Direct reporting line between CTO and CEO ensures streamlined decision making\"\n      }\n    },\n    \"delegated_agents\": [\"ICP Qualifier\", \"Technographic Agent\", \"Committee Mapper\"],\n    \"confidence_score\": 0.85,\n    \"next_steps\": [\"Reach out to CTO for integration discussion\", \"Prepare proposal highlighting analytics integration\"]\n  },\n  \"metadata\": {\n    \"agent_name\": \"Research Manager\",\n    \"timestamp\": \"2026-01-20T10:00:00Z\",\n    \"confidence\": 0.90\n  }\n}"
+}

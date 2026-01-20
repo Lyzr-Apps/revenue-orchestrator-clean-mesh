@@ -1,0 +1,222 @@
+{
+  "workflow_name": "Lyzr Sovereign Revenue Engine v4.3",
+  "version": "4.3",
+  "created_at": "2026-01-20",
+  "agents": [
+    {
+      "agent_id": "696eeb2b3bd35d7a6606a553",
+      "name": "Sovereign Strategist",
+      "type": "manager",
+      "description": "Top-level orchestrator for all revenue operations",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "manages": ["696eeaf33bd35d7a6606a54c", "696eeb11b50537828e0aff93", "696eeacdb50537828e0aff83"]
+    },
+    {
+      "agent_id": "696eeaf33bd35d7a6606a54c",
+      "name": "Research Manager",
+      "type": "manager",
+      "description": "Coordinate research pipeline for deep account intelligence",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "manages": ["696ee969b50537828e0aff64", "696ee97cb50537828e0aff65", "696ee98e3bd35d7a6606a530"]
+    },
+    {
+      "agent_id": "696eeb11b50537828e0aff93",
+      "name": "Outreach Manager",
+      "type": "manager",
+      "description": "Coordinate personalized outreach creation and quality assurance",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "manages": ["696ee9a23bd35d7a6606a534", "696ee9b5b50537828e0aff69", "696ee9ccb50537828e0aff6a"]
+    },
+    {
+      "agent_id": "696eeacdb50537828e0aff83",
+      "name": "Monitoring Manager",
+      "type": "manager",
+      "description": "Coordinate monitoring and analysis operations",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "manages": ["696ee9e2b50537828e0aff6e", "696ee9fa3bd35d7a6606a53b", "696eea103bd35d7a6606a53c"]
+    },
+    {
+      "agent_id": "696ee969b50537828e0aff64",
+      "name": "ICP Qualifier",
+      "type": "sub-agent",
+      "description": "Qualify leads against ideal customer profile",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": ["web_search"]
+    },
+    {
+      "agent_id": "696ee97cb50537828e0aff65",
+      "name": "Technographic Agent",
+      "type": "sub-agent",
+      "description": "Identify tech stack and integration opportunities",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": ["web_search"]
+    },
+    {
+      "agent_id": "696ee98e3bd35d7a6606a530",
+      "name": "Committee Mapper",
+      "type": "sub-agent",
+      "description": "Map buying committee and identify decision makers",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": ["web_search"]
+    },
+    {
+      "agent_id": "696ee9a23bd35d7a6606a534",
+      "name": "Persona Matcher",
+      "type": "sub-agent",
+      "description": "Match persona to contact and determine messaging angle",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696ee9b5b50537828e0aff69",
+      "name": "Content Generator",
+      "type": "sub-agent",
+      "description": "Generate personalized outreach messages",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696ee9ccb50537828e0aff6a",
+      "name": "QA Gatekeeper",
+      "type": "sub-agent",
+      "description": "Quality assurance for outreach content",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696ee9e2b50537828e0aff6e",
+      "name": "Transcript Analyst",
+      "type": "sub-agent",
+      "description": "Analyze meeting transcripts for insights",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696ee9fa3bd35d7a6606a53b",
+      "name": "Response Classifier",
+      "type": "sub-agent",
+      "description": "Classify email responses by sentiment and intent",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696eea103bd35d7a6606a53c",
+      "name": "Insight Generator",
+      "type": "sub-agent",
+      "description": "Generate strategic insights from data patterns",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696eea2ab50537828e0aff75",
+      "name": "Voice Librarian",
+      "type": "specialized",
+      "description": "Maintain and retrieve winning phrases from voice library",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696eea423bd35d7a6606a540",
+      "name": "Objection Handler",
+      "type": "specialized",
+      "description": "Generate responses to common objections",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696eea5cb50537828e0aff79",
+      "name": "LinkedIn Orchestrator",
+      "type": "specialized",
+      "description": "Coordinate LinkedIn outreach actions",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": ["linkedin"]
+    },
+    {
+      "agent_id": "696eea8f3bd35d7a6606a544",
+      "name": "Computer Use Agent",
+      "type": "specialized",
+      "description": "Browser automation for LinkedIn actions",
+      "model": "gpt-4o",
+      "provider": "OpenAI",
+      "tools": []
+    },
+    {
+      "agent_id": "696eeaaa3bd35d7a6606a545",
+      "name": "HubSpot Sync Agent",
+      "type": "specialized",
+      "description": "Sync data with HubSpot CRM",
+      "model": "gpt-4o-mini",
+      "provider": "OpenAI",
+      "tools": ["hubspot"]
+    }
+  ],
+  "workflow_graph": {
+    "nodes": [
+      {"id": "user_input", "type": "Input", "label": "Revenue Request", "nodeCategory": "input"},
+      {"id": "sovereign_strategist", "type": "Agent", "label": "Sovereign Strategist", "nodeCategory": "agent", "agent_id": "696eeb2b3bd35d7a6606a553"},
+      {"id": "research_manager", "type": "Agent", "label": "Research Manager", "nodeCategory": "agent", "agent_id": "696eeaf33bd35d7a6606a54c"},
+      {"id": "outreach_manager", "type": "Agent", "label": "Outreach Manager", "nodeCategory": "agent", "agent_id": "696eeb11b50537828e0aff93"},
+      {"id": "monitoring_manager", "type": "Agent", "label": "Monitoring Manager", "nodeCategory": "agent", "agent_id": "696eeacdb50537828e0aff83"},
+      {"id": "icp_qualifier", "type": "Agent", "label": "ICP Qualifier", "nodeCategory": "agent", "agent_id": "696ee969b50537828e0aff64"},
+      {"id": "technographic_agent", "type": "Agent", "label": "Technographic Agent", "nodeCategory": "agent", "agent_id": "696ee97cb50537828e0aff65"},
+      {"id": "committee_mapper", "type": "Agent", "label": "Committee Mapper", "nodeCategory": "agent", "agent_id": "696ee98e3bd35d7a6606a530"},
+      {"id": "persona_matcher", "type": "Agent", "label": "Persona Matcher", "nodeCategory": "agent", "agent_id": "696ee9a23bd35d7a6606a534"},
+      {"id": "content_generator", "type": "Agent", "label": "Content Generator", "nodeCategory": "agent", "agent_id": "696ee9b5b50537828e0aff69"},
+      {"id": "qa_gatekeeper", "type": "Agent", "label": "QA Gatekeeper", "nodeCategory": "agent", "agent_id": "696ee9ccb50537828e0aff6a"},
+      {"id": "transcript_analyst", "type": "Agent", "label": "Transcript Analyst", "nodeCategory": "agent", "agent_id": "696ee9e2b50537828e0aff6e"},
+      {"id": "response_classifier", "type": "Agent", "label": "Response Classifier", "nodeCategory": "agent", "agent_id": "696ee9fa3bd35d7a6606a53b"},
+      {"id": "insight_generator", "type": "Agent", "label": "Insight Generator", "nodeCategory": "agent", "agent_id": "696eea103bd35d7a6606a53c"},
+      {"id": "voice_librarian", "type": "Agent", "label": "Voice Librarian", "nodeCategory": "agent", "agent_id": "696eea2ab50537828e0aff75"},
+      {"id": "objection_handler", "type": "Agent", "label": "Objection Handler", "nodeCategory": "agent", "agent_id": "696eea423bd35d7a6606a540"},
+      {"id": "linkedin_orchestrator", "type": "Agent", "label": "LinkedIn Orchestrator", "nodeCategory": "agent", "agent_id": "696eea5cb50537828e0aff79"},
+      {"id": "computer_use_agent", "type": "Agent", "label": "Computer Use Agent", "nodeCategory": "agent", "agent_id": "696eea8f3bd35d7a6606a544"},
+      {"id": "hubspot_sync_agent", "type": "Agent", "label": "HubSpot Sync Agent", "nodeCategory": "agent", "agent_id": "696eeaaa3bd35d7a6606a545"},
+      {"id": "final_output", "type": "Output", "label": "Revenue Results", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "user_input", "target": "sovereign_strategist"},
+      {"source": "sovereign_strategist", "target": "research_manager"},
+      {"source": "sovereign_strategist", "target": "outreach_manager"},
+      {"source": "sovereign_strategist", "target": "monitoring_manager"},
+      {"source": "research_manager", "target": "icp_qualifier"},
+      {"source": "research_manager", "target": "technographic_agent"},
+      {"source": "research_manager", "target": "committee_mapper"},
+      {"source": "outreach_manager", "target": "persona_matcher"},
+      {"source": "outreach_manager", "target": "content_generator"},
+      {"source": "outreach_manager", "target": "qa_gatekeeper"},
+      {"source": "monitoring_manager", "target": "transcript_analyst"},
+      {"source": "monitoring_manager", "target": "response_classifier"},
+      {"source": "monitoring_manager", "target": "insight_generator"},
+      {"source": "icp_qualifier", "target": "final_output"},
+      {"source": "technographic_agent", "target": "final_output"},
+      {"source": "committee_mapper", "target": "final_output"},
+      {"source": "persona_matcher", "target": "final_output"},
+      {"source": "content_generator", "target": "final_output"},
+      {"source": "qa_gatekeeper", "target": "final_output"},
+      {"source": "transcript_analyst", "target": "final_output"},
+      {"source": "response_classifier", "target": "final_output"},
+      {"source": "insight_generator", "target": "final_output"},
+      {"source": "voice_librarian", "target": "final_output"},
+      {"source": "objection_handler", "target": "final_output"},
+      {"source": "linkedin_orchestrator", "target": "final_output"},
+      {"source": "computer_use_agent", "target": "final_output"},
+      {"source": "hubspot_sync_agent", "target": "final_output"}
+    ]
+  }
+}

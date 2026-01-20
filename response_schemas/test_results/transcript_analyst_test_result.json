@@ -1,0 +1,57 @@
+{
+  "agent_name": "Transcript Analyst",
+  "agent_id": "696ee9e2b50537828e0aff6e",
+  "test_message": "Transcript: 'We're interested but concerned about implementation time. How long does onboarding take?'",
+  "expected_purpose": "transcript_analysis",
+  "timestamp": "2026-01-20T02:45:11.258679",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "key_insights": {
+        "objections_raised": [
+          {
+            "objection": "Concerned about implementation time",
+            "speaker": "Unknown",
+            "timestamp": "Unknown",
+            "severity": "medium"
+          }
+        ],
+        "champions_identified": [],
+        "winning_phrases": [],
+        "pain_points_mentioned": [
+          "implementation time",
+          "onboarding duration"
+        ]
+      },
+      "sentiment_analysis": {
+        "overall_sentiment": "neutral",
+        "engagement_level": 70,
+        "buying_signals": [
+          "interest expressed"
+        ]
+      },
+      "action_items": [
+        {
+          "action": "Provide detailed onboarding timeline",
+          "owner": "Sales Team",
+          "priority": "high"
+        }
+      ],
+      "next_steps": {
+        "recommended_follow_up": "Schedule a call to discuss the onboarding process in detail",
+        "timing": "Within one week",
+        "focus_areas": [
+          "onboarding process",
+          "implementation plan"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Transcript Analyst",
+      "timestamp": "2023-10-05T12:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"key_insights\": {\n      \"objections_raised\": [\n        {\n          \"objection\": \"Concerned about implementation time\",\n          \"speaker\": \"Unknown\",\n          \"timestamp\": \"Unknown\",\n          \"severity\": \"medium\"\n        }\n      ],\n      \"champions_identified\": [],\n      \"winning_phrases\": [],\n      \"pain_points_mentioned\": [\n        \"implementation time\",\n        \"onboarding duration\"\n      ]\n    },\n    \"sentiment_analysis\": {\n      \"overall_sentiment\": \"neutral\",\n      \"engagement_level\": 70,\n      \"buying_signals\": [\"interest expressed\"]\n    },\n    \"action_items\": [\n      {\n        \"action\": \"Provide detailed onboarding timeline\",\n        \"owner\": \"Sales Team\",\n        \"priority\": \"high\"\n      }\n    ],\n    \"next_steps\": {\n      \"recommended_follow_up\": \"Schedule a call to discuss the onboarding process in detail\",\n      \"timing\": \"Within one week\",\n      \"focus_areas\": [\"onboarding process\", \"implementation plan\"]\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Transcript Analyst\",\n    \"timestamp\": \"2023-10-05T12:00:00Z\"\n  }\n}"
+}

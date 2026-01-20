@@ -1,0 +1,58 @@
+{
+  "agent_name": "LinkedIn Orchestrator",
+  "agent_id": "696eea5cb50537828e0aff79",
+  "test_message": "Schedule LinkedIn actions for John Doe - connection request, then follow-up message in 3 days",
+  "expected_purpose": "linkedin_coordination",
+  "timestamp": "2026-01-20T02:45:58.085007",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "campaign_plan": {
+        "campaign_name": "John Doe Outreach Campaign",
+        "target_profile": "John Doe",
+        "strategy": "connect_first",
+        "total_touchpoints": 2
+      },
+      "scheduled_actions": [
+        {
+          "action_type": "connection_request",
+          "scheduled_time": "2023-10-27T10:00:00Z",
+          "content": "Hi John, I'd love to connect and discuss potential opportunities.",
+          "priority": "high"
+        },
+        {
+          "action_type": "dm",
+          "scheduled_time": "2023-10-30T10:00:00Z",
+          "content": "Hello John, just following up on my connection request. I\u2019d be happy to chat about how we might collaborate.",
+          "priority": "medium"
+        }
+      ],
+      "content_recommendations": {
+        "connection_note": "Hi John, I'd love to connect and discuss potential opportunities.",
+        "comment_suggestions": [
+          "Great insights, John!",
+          "Thanks for sharing, John."
+        ],
+        "dm_sequence": [
+          "Hello John, just following up on my connection request. I\u2019d be happy to chat about how we might collaborate.",
+          "Let me know when is a good time for a quick conversation, John."
+        ]
+      },
+      "engagement_strategy": {
+        "warm_up_activities": [
+          "View John's profile",
+          "Engage with John's recent posts"
+        ],
+        "timing_recommendations": "Best to send connection requests in late mornings and follow-ups in early afternoon.",
+        "follow_up_cadence": "Follow-up message 3 days after the connection request."
+      }
+    },
+    "metadata": {
+      "agent_name": "LinkedIn Orchestrator",
+      "timestamp": "2023-10-27T09:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"campaign_plan\": {\n      \"campaign_name\": \"John Doe Outreach Campaign\",\n      \"target_profile\": \"John Doe\",\n      \"strategy\": \"connect_first\",\n      \"total_touchpoints\": 2\n    },\n    \"scheduled_actions\": [\n      {\n        \"action_type\": \"connection_request\",\n        \"scheduled_time\": \"2023-10-27T10:00:00Z\",\n        \"content\": \"Hi John, I'd love to connect and discuss potential opportunities.\",\n        \"priority\": \"high\"\n      },\n      {\n        \"action_type\": \"dm\",\n        \"scheduled_time\": \"2023-10-30T10:00:00Z\",\n        \"content\": \"Hello John, just following up on my connection request. I\u2019d be happy to chat about how we might collaborate.\",\n        \"priority\": \"medium\"\n      }\n    ],\n    \"content_recommendations\": {\n      \"connection_note\": \"Hi John, I'd love to connect and discuss potential opportunities.\",\n      \"comment_suggestions\": [\n        \"Great insights, John!\",\n        \"Thanks for sharing, John.\"\n      ],\n      \"dm_sequence\": [\n        \"Hello John, just following up on my connection request. I\u2019d be happy to chat about how we might collaborate.\",\n        \"Let me know when is a good time for a quick conversation, John.\"\n      ]\n    },\n    \"engagement_strategy\": {\n      \"warm_up_activities\": [\n        \"View John's profile\",\n        \"Engage with John's recent posts\"\n      ],\n      \"timing_recommendations\": \"Best to send connection requests in late mornings and follow-ups in early afternoon.\",\n      \"follow_up_cadence\": \"Follow-up message 3 days after the connection request.\"\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"LinkedIn Orchestrator\",\n    \"timestamp\": \"2023-10-27T09:00:00Z\"\n  }\n}"
+}

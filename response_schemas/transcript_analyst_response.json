@@ -1,0 +1,153 @@
+{
+  "agent_name": "Transcript Analyst",
+  "agent_id": "696ee9e2b50537828e0aff6e",
+  "agent_purpose": "analyzer",
+  "description": "Analyzes meeting transcripts to extract objections, champions, and winning phrases",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "key_insights": {
+        "objections_raised": [
+          {
+            "objection": "string",
+            "speaker": "string",
+            "timestamp": "string",
+            "severity": "string"
+          }
+        ],
+        "champions_identified": [
+          "any"
+        ],
+        "winning_phrases": [
+          "any"
+        ],
+        "pain_points_mentioned": [
+          "string"
+        ]
+      },
+      "sentiment_analysis": {
+        "overall_sentiment": "string",
+        "engagement_level": "number",
+        "buying_signals": [
+          "string"
+        ]
+      },
+      "action_items": [
+        {
+          "action": "string",
+          "owner": "string",
+          "priority": "string"
+        }
+      ],
+      "next_steps": {
+        "recommended_follow_up": "string",
+        "timing": "string",
+        "focus_areas": [
+          "string"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "key_insights": {
+        "objections_raised": [
+          {
+            "objection": "Concerned about implementation time",
+            "speaker": "Unknown",
+            "timestamp": "Unknown",
+            "severity": "medium"
+          }
+        ],
+        "champions_identified": [],
+        "winning_phrases": [],
+        "pain_points_mentioned": [
+          "implementation time",
+          "onboarding duration"
+        ]
+      },
+      "sentiment_analysis": {
+        "overall_sentiment": "neutral",
+        "engagement_level": 70,
+        "buying_signals": [
+          "interest expressed"
+        ]
+      },
+      "action_items": [
+        {
+          "action": "Provide detailed onboarding timeline",
+          "owner": "Sales Team",
+          "priority": "high"
+        }
+      ],
+      "next_steps": {
+        "recommended_follow_up": "Schedule a call to discuss the onboarding process in detail",
+        "timing": "Within one week",
+        "focus_areas": [
+          "onboarding process",
+          "implementation plan"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Transcript Analyst",
+      "timestamp": "2023-10-05T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:45:11.259267",
+  "test_message_used": "Analyze this sample data for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "key_insights": {
+        "objections_raised": [
+          {
+            "objection": "Concerned about implementation time",
+            "speaker": "Unknown",
+            "timestamp": "Unknown",
+            "severity": "medium"
+          }
+        ],
+        "champions_identified": [],
+        "winning_phrases": [],
+        "pain_points_mentioned": [
+          "implementation time",
+          "onboarding duration"
+        ]
+      },
+      "sentiment_analysis": {
+        "overall_sentiment": "neutral",
+        "engagement_level": 70,
+        "buying_signals": [
+          "interest expressed"
+        ]
+      },
+      "action_items": [
+        {
+          "action": "Provide detailed onboarding timeline",
+          "owner": "Sales Team",
+          "priority": "high"
+        }
+      ],
+      "next_steps": {
+        "recommended_follow_up": "Schedule a call to discuss the onboarding process in detail",
+        "timing": "Within one week",
+        "focus_areas": [
+          "onboarding process",
+          "implementation plan"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Transcript Analyst",
+      "timestamp": "2023-10-05T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

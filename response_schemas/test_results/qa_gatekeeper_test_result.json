@@ -1,0 +1,60 @@
+{
+  "agent_name": "QA Gatekeeper",
+  "agent_id": "696ee9ccb50537828e0aff6a",
+  "test_message": "Review outreach: 'Hi John, I noticed your company is hiring SDRs. Would you be open to discussing how we help sales teams...'",
+  "expected_purpose": "qa_review",
+  "timestamp": "2026-01-20T02:45:03.706684",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "quality_score": 75,
+      "approval_status": "needs_revision",
+      "quality_checks": {
+        "accuracy": {
+          "passed": true,
+          "issues": []
+        },
+        "tone": {
+          "passed": false,
+          "issues": [
+            "The tone is somewhat informal; might need to be more professional depending on the recipient."
+          ]
+        },
+        "compliance": {
+          "passed": true,
+          "issues": []
+        },
+        "personalization": {
+          "passed": true,
+          "issues": []
+        },
+        "grammar": {
+          "passed": true,
+          "issues": []
+        }
+      },
+      "improvement_suggestions": [
+        {
+          "type": "tone",
+          "suggestion": "Consider using a more formal greeting and closing statement, especially if this is a first contact.",
+          "priority": "medium"
+        }
+      ],
+      "flagged_content": [
+        {
+          "text": "Hi John, I noticed your company is hiring SDRs.",
+          "reason": "Potentially informal tone for professional outreach.",
+          "severity": "info"
+        }
+      ],
+      "final_recommendation": "revise"
+    },
+    "metadata": {
+      "agent_name": "QA Gatekeeper",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"quality_score\": 75,\n    \"approval_status\": \"needs_revision\",\n    \"quality_checks\": {\n      \"accuracy\": {\"passed\": true, \"issues\": []},\n      \"tone\": {\"passed\": false, \"issues\": [\"The tone is somewhat informal; might need to be more professional depending on the recipient.\"]},\n      \"compliance\": {\"passed\": true, \"issues\": []},\n      \"personalization\": {\"passed\": true, \"issues\": []},\n      \"grammar\": {\"passed\": true, \"issues\": []}\n    },\n    \"improvement_suggestions\": [\n      {\n        \"type\": \"tone\",\n        \"suggestion\": \"Consider using a more formal greeting and closing statement, especially if this is a first contact.\",\n        \"priority\": \"medium\"\n      }\n    ],\n    \"flagged_content\": [\n      {\n        \"text\": \"Hi John, I noticed your company is hiring SDRs.\",\n        \"reason\": \"Potentially informal tone for professional outreach.\",\n        \"severity\": \"info\"\n      }\n    ],\n    \"final_recommendation\": \"revise\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"QA Gatekeeper\",\n    \"timestamp\": \"2023-10-01T12:00:00Z\"\n  }\n}"
+}

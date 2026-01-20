@@ -1,0 +1,45 @@
+{
+  "agent_name": "Response Classifier",
+  "agent_id": "696ee9fa3bd35d7a6606a53b",
+  "test_message": "Email: 'Thanks for reaching out. This could be interesting. Can we schedule a call next week?'",
+  "expected_purpose": "response_classification",
+  "timestamp": "2026-01-20T02:45:19.788539",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "classification": {
+        "category": "positive",
+        "sentiment": "positive",
+        "intent": "interested",
+        "confidence": 90
+      },
+      "key_signals": {
+        "positive_indicators": [
+          "thanks for reaching out",
+          "could be interesting",
+          "schedule a call"
+        ],
+        "negative_indicators": [],
+        "buying_signals": []
+      },
+      "extracted_data": {
+        "objections": [],
+        "questions": [],
+        "requested_information": []
+      },
+      "recommended_action": {
+        "action_type": "schedule_call",
+        "priority": "high",
+        "suggested_response": "Thank you for your interest! I will reach out to schedule a call for next week.",
+        "timing": "this_week"
+      }
+    },
+    "metadata": {
+      "agent_name": "Response Classifier",
+      "timestamp": "2023-10-06T12:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"classification\": {\n      \"category\": \"positive\",\n      \"sentiment\": \"positive\",\n      \"intent\": \"interested\",\n      \"confidence\": 90\n    },\n    \"key_signals\": {\n      \"positive_indicators\": [\"thanks for reaching out\", \"could be interesting\", \"schedule a call\"],\n      \"negative_indicators\": [],\n      \"buying_signals\": []\n    },\n    \"extracted_data\": {\n      \"objections\": [],\n      \"questions\": [],\n      \"requested_information\": []\n    },\n    \"recommended_action\": {\n      \"action_type\": \"schedule_call\",\n      \"priority\": \"high\",\n      \"suggested_response\": \"Thank you for your interest! I will reach out to schedule a call for next week.\",\n      \"timing\": \"this_week\"\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Response Classifier\",\n    \"timestamp\": \"2023-10-06T12:00:00Z\"\n  }\n}"
+}

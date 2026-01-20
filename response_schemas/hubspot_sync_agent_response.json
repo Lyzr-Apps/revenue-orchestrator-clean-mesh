@@ -1,0 +1,80 @@
+{
+  "agent_name": "HubSpot Sync Agent",
+  "agent_id": "696eeaaa3bd35d7a6606a545",
+  "agent_purpose": "assistant",
+  "description": "Manages bidirectional data sync between revenue engine and HubSpot CRM",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "sync_operation": "string",
+      "records_synced": "number",
+      "company_record": {
+        "hubspot_id": "string",
+        "name": "string",
+        "fields_updated": [
+          "string"
+        ]
+      },
+      "contact_records": [
+        "any"
+      ],
+      "deal_record": "null",
+      "sync_timestamp": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "confidence": "number"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "sync_operation": "account_update",
+      "records_synced": 1,
+      "company_record": {
+        "hubspot_id": "12345678",
+        "name": "Acme Corp",
+        "fields_updated": [
+          "tech_stack",
+          "buying_committee_mapped"
+        ]
+      },
+      "contact_records": [],
+      "deal_record": null,
+      "sync_timestamp": "2026-01-20T10:00:00Z"
+    },
+    "metadata": {
+      "agent_name": "HubSpot Sync Agent",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 1.0
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:49:45.800035",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "sync_operation": "account_update",
+      "records_synced": 1,
+      "company_record": {
+        "hubspot_id": "12345678",
+        "name": "Acme Corp",
+        "fields_updated": [
+          "tech_stack",
+          "buying_committee_mapped"
+        ]
+      },
+      "contact_records": [],
+      "deal_record": null,
+      "sync_timestamp": "2026-01-20T10:00:00Z"
+    },
+    "metadata": {
+      "agent_name": "HubSpot Sync Agent",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 1.0
+    }
+  },
+  "test_passed": true
+}

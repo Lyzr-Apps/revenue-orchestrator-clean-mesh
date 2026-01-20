@@ -1,0 +1,147 @@
+{
+  "agent_name": "Voice Librarian",
+  "agent_id": "696eea2ab50537828e0aff75",
+  "agent_purpose": "assistant",
+  "description": "Manages library of winning phrases and content templates",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "retrieved_phrases": [
+        {
+          "phrase": "string",
+          "context": "string",
+          "performance_score": "number",
+          "use_cases": [
+            "string"
+          ],
+          "success_metrics": {
+            "response_rate": "number",
+            "conversion_rate": "number",
+            "times_used": "string"
+          }
+        }
+      ],
+      "recommended_templates": [
+        "any"
+      ],
+      "voice_guidelines": {
+        "tone": "string",
+        "key_principles": [
+          "string"
+        ],
+        "avoid_phrases": [
+          "string"
+        ]
+      },
+      "library_stats": {
+        "total_phrases": "string",
+        "top_performers": [
+          "string"
+        ],
+        "recently_added": [
+          "string"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "retrieved_phrases": [
+        {
+          "phrase": "We help sales teams book 3x more meetings without adding headcount",
+          "context": "email_body",
+          "performance_score": 45,
+          "use_cases": [
+            "sales_outreach",
+            "lead_generation"
+          ],
+          "success_metrics": {
+            "response_rate": 45,
+            "conversion_rate": 30,
+            "times_used": "25"
+          }
+        }
+      ],
+      "recommended_templates": [],
+      "voice_guidelines": {
+        "tone": "professional",
+        "key_principles": [
+          "clarity",
+          "value-oriented"
+        ],
+        "avoid_phrases": [
+          "we think",
+          "maybe"
+        ]
+      },
+      "library_stats": {
+        "total_phrases": "1",
+        "top_performers": [
+          "We help sales teams book 3x more meetings without adding headcount"
+        ],
+        "recently_added": [
+          "We help sales teams book 3x more meetings without adding headcount"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Voice Librarian",
+      "timestamp": "2023-10-02T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:45:37.499228",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "retrieved_phrases": [
+        {
+          "phrase": "We help sales teams book 3x more meetings without adding headcount",
+          "context": "email_body",
+          "performance_score": 45,
+          "use_cases": [
+            "sales_outreach",
+            "lead_generation"
+          ],
+          "success_metrics": {
+            "response_rate": 45,
+            "conversion_rate": 30,
+            "times_used": "25"
+          }
+        }
+      ],
+      "recommended_templates": [],
+      "voice_guidelines": {
+        "tone": "professional",
+        "key_principles": [
+          "clarity",
+          "value-oriented"
+        ],
+        "avoid_phrases": [
+          "we think",
+          "maybe"
+        ]
+      },
+      "library_stats": {
+        "total_phrases": "1",
+        "top_performers": [
+          "We help sales teams book 3x more meetings without adding headcount"
+        ],
+        "recently_added": [
+          "We help sales teams book 3x more meetings without adding headcount"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Voice Librarian",
+      "timestamp": "2023-10-02T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

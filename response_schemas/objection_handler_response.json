@@ -1,0 +1,145 @@
+{
+  "agent_name": "Objection Handler",
+  "agent_id": "696eea423bd35d7a6606a540",
+  "agent_purpose": "recommendation",
+  "description": "Analyzes objections and generates proven counter-arguments",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "objection_analysis": {
+        "objection_type": "string",
+        "objection_severity": "string",
+        "root_cause": "string",
+        "confidence": "number"
+      },
+      "recommended_responses": [
+        {
+          "response_text": "string",
+          "framework_used": "string",
+          "effectiveness_score": "number",
+          "when_to_use": "string"
+        }
+      ],
+      "supporting_evidence": {
+        "case_studies": [
+          "string"
+        ],
+        "testimonials": [
+          "string"
+        ],
+        "data_points": [
+          "string"
+        ]
+      },
+      "next_steps": {
+        "immediate_action": "string",
+        "follow_up_strategy": "string",
+        "escalation_needed": "boolean"
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "objection_analysis": {
+        "objection_type": "need",
+        "objection_severity": "medium",
+        "root_cause": "The prospect perceives their current CRM as sufficient and does not see the added value of an additional tool.",
+        "confidence": 85
+      },
+      "recommended_responses": [
+        {
+          "response_text": "I understand that you already have a CRM. Many of our clients felt the same way at first, but found that our tool integrates seamlessly with existing CRMs and enhances their functionality by providing unique features that your current solution might lack.",
+          "framework_used": "feel_felt_found",
+          "effectiveness_score": 80,
+          "when_to_use": "When the prospect sees their current CRM as sufficient and is open to learning about enhancements."
+        },
+        {
+          "response_text": "Can I ask what specific challenges you are currently facing with your CRM? Our tool is designed to address common CRM shortcomings by providing additional capabilities that might be beneficial.",
+          "framework_used": "question_redirect",
+          "effectiveness_score": 75,
+          "when_to_use": "When you need to probe deeper into the prospect's issues with their current CRM."
+        }
+      ],
+      "supporting_evidence": {
+        "case_studies": [
+          "ABC Company increased efficiency by 30% with our CRM tool",
+          "XYZ Corp found it boosted team collaboration by 50%"
+        ],
+        "testimonials": [
+          "'This tool revolutionized how we use our existing CRM' - Client A",
+          "'An essential add-on to our current system' - Client B"
+        ],
+        "data_points": [
+          "70% of our users report increased productivity",
+          "85% of clients see ROI in 6 months"
+        ]
+      },
+      "next_steps": {
+        "immediate_action": "Schedule a demo to showcase how our tool complements existing CRMs.",
+        "follow_up_strategy": "Send a customized report highlighting features that integrate with and enhance their current system.",
+        "escalation_needed": false
+      }
+    },
+    "metadata": {
+      "agent_name": "Objection Handler",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:45:48.181210",
+  "test_message_used": "Provide sample recommendations for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "objection_analysis": {
+        "objection_type": "need",
+        "objection_severity": "medium",
+        "root_cause": "The prospect perceives their current CRM as sufficient and does not see the added value of an additional tool.",
+        "confidence": 85
+      },
+      "recommended_responses": [
+        {
+          "response_text": "I understand that you already have a CRM. Many of our clients felt the same way at first, but found that our tool integrates seamlessly with existing CRMs and enhances their functionality by providing unique features that your current solution might lack.",
+          "framework_used": "feel_felt_found",
+          "effectiveness_score": 80,
+          "when_to_use": "When the prospect sees their current CRM as sufficient and is open to learning about enhancements."
+        },
+        {
+          "response_text": "Can I ask what specific challenges you are currently facing with your CRM? Our tool is designed to address common CRM shortcomings by providing additional capabilities that might be beneficial.",
+          "framework_used": "question_redirect",
+          "effectiveness_score": 75,
+          "when_to_use": "When you need to probe deeper into the prospect's issues with their current CRM."
+        }
+      ],
+      "supporting_evidence": {
+        "case_studies": [
+          "ABC Company increased efficiency by 30% with our CRM tool",
+          "XYZ Corp found it boosted team collaboration by 50%"
+        ],
+        "testimonials": [
+          "'This tool revolutionized how we use our existing CRM' - Client A",
+          "'An essential add-on to our current system' - Client B"
+        ],
+        "data_points": [
+          "70% of our users report increased productivity",
+          "85% of clients see ROI in 6 months"
+        ]
+      },
+      "next_steps": {
+        "immediate_action": "Schedule a demo to showcase how our tool complements existing CRMs.",
+        "follow_up_strategy": "Send a customized report highlighting features that integrate with and enhance their current system.",
+        "escalation_needed": false
+      }
+    },
+    "metadata": {
+      "agent_name": "Objection Handler",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

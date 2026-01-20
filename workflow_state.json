@@ -1,0 +1,79 @@
+{
+  "workflow_name": "Lyzr Sovereign Revenue Engine v4.3",
+  "total_agents": 17,
+  "creation_date": "2026-01-20",
+  "status": "complete",
+  "agent_ids": {
+    "managers": {
+      "sovereign_strategist": "696eeb2b3bd35d7a6606a553",
+      "research_manager": "696eeaf33bd35d7a6606a54c",
+      "outreach_manager": "696eeb11b50537828e0aff93",
+      "monitoring_manager": "696eeacdb50537828e0aff83"
+    },
+    "research_sub_agents": {
+      "icp_qualifier": "696ee969b50537828e0aff64",
+      "technographic_agent": "696ee97cb50537828e0aff65",
+      "committee_mapper": "696ee98e3bd35d7a6606a530"
+    },
+    "outreach_sub_agents": {
+      "persona_matcher": "696ee9a23bd35d7a6606a534",
+      "content_generator": "696ee9b5b50537828e0aff69",
+      "qa_gatekeeper": "696ee9ccb50537828e0aff6a"
+    },
+    "monitoring_sub_agents": {
+      "transcript_analyst": "696ee9e2b50537828e0aff6e",
+      "response_classifier": "696ee9fa3bd35d7a6606a53b",
+      "insight_generator": "696eea103bd35d7a6606a53c"
+    },
+    "specialized_agents": {
+      "voice_librarian": "696eea2ab50537828e0aff75",
+      "objection_handler": "696eea423bd35d7a6606a540",
+      "linkedin_orchestrator": "696eea5cb50537828e0aff79",
+      "computer_use_agent": "696eea8f3bd35d7a6606a544",
+      "hubspot_sync_agent": "696eeaaa3bd35d7a6606a545"
+    }
+  },
+  "all_agent_ids_array": [
+    "696eeb2b3bd35d7a6606a553",
+    "696eeaf33bd35d7a6606a54c",
+    "696eeb11b50537828e0aff93",
+    "696eeacdb50537828e0aff83",
+    "696ee969b50537828e0aff64",
+    "696ee97cb50537828e0aff65",
+    "696ee98e3bd35d7a6606a530",
+    "696ee9a23bd35d7a6606a534",
+    "696ee9b5b50537828e0aff69",
+    "696ee9ccb50537828e0aff6a",
+    "696ee9e2b50537828e0aff6e",
+    "696ee9fa3bd35d7a6606a53b",
+    "696eea103bd35d7a6606a53c",
+    "696eea2ab50537828e0aff75",
+    "696eea423bd35d7a6606a540",
+    "696eea5cb50537828e0aff79",
+    "696eea8f3bd35d7a6606a544",
+    "696eeaaa3bd35d7a6606a545"
+  ],
+  "response_schemas_created": 17,
+  "manager_subagent_relationships": {
+    "sovereign_strategist_manages": [
+      "research_manager",
+      "outreach_manager",
+      "monitoring_manager"
+    ],
+    "research_manager_manages": [
+      "icp_qualifier",
+      "technographic_agent",
+      "committee_mapper"
+    ],
+    "outreach_manager_manages": [
+      "persona_matcher",
+      "content_generator",
+      "qa_gatekeeper"
+    ],
+    "monitoring_manager_manages": [
+      "transcript_analyst",
+      "response_classifier",
+      "insight_generator"
+    ]
+  }
+}

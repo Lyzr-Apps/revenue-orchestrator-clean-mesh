@@ -1,0 +1,79 @@
+{
+  "agent_name": "ICP Qualifier",
+  "agent_id": "696ee969b50537828e0aff64",
+  "agent_purpose": "analyzer",
+  "description": "Analyzes and scores leads against ideal customer profile criteria",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "icp_score": "number",
+      "fit_level": "string",
+      "qualifying_factors": [
+        "string"
+      ],
+      "disqualifying_factors": [
+        "any"
+      ],
+      "company_profile": {
+        "industry": "string",
+        "size": "string",
+        "revenue_range": "string"
+      },
+      "recommendation": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "icp_score": 80,
+      "fit_level": "good",
+      "qualifying_factors": [
+        "B2B SaaS industry aligns with target market",
+        "Mid-size company with reasonable revenue"
+      ],
+      "disqualifying_factors": [],
+      "company_profile": {
+        "industry": "B2B SaaS",
+        "size": "50-200 employees",
+        "revenue_range": "$5M-$20M"
+      },
+      "recommendation": "accept"
+    },
+    "metadata": {
+      "agent_name": "ICP Qualifier",
+      "timestamp": "2023-10-01T00:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:44:23.469155",
+  "test_message_used": "Analyze this sample data for testing",
+  "raw_test_response": "Please provide the sample data you'd like me to analyze for testing.",
+  "test_error": "Response not valid JSON: Expecting value: line 1 column 1 (char 0)",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "icp_score": 80,
+      "fit_level": "good",
+      "qualifying_factors": [
+        "B2B SaaS industry aligns with target market",
+        "Mid-size company with reasonable revenue"
+      ],
+      "disqualifying_factors": [],
+      "company_profile": {
+        "industry": "B2B SaaS",
+        "size": "50-200 employees",
+        "revenue_range": "$5M-$20M"
+      },
+      "recommendation": "accept"
+    },
+    "metadata": {
+      "agent_name": "ICP Qualifier",
+      "timestamp": "2023-10-01T00:00:00Z"
+    }
+  },
+  "test_passed": true
+}

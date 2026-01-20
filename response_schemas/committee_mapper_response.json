@@ -1,0 +1,200 @@
+{
+  "agent_name": "Committee Mapper",
+  "agent_id": "696ee98e3bd35d7a6606a530",
+  "agent_purpose": "analyzer",
+  "description": "Maps buying committee members and organizational decision-making structure",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "company": "string",
+      "buying_committee": {
+        "decision_makers": [
+          {
+            "name": "string",
+            "title": "string",
+            "linkedin": "string",
+            "influence_score": "number"
+          }
+        ],
+        "influencers": [
+          {
+            "name": "string",
+            "title": "string",
+            "linkedin": "string",
+            "influence_score": "number"
+          }
+        ],
+        "champions": [
+          {
+            "name": "string",
+            "title": "string",
+            "reason": "string",
+            "influence_score": "number"
+          }
+        ],
+        "blockers": [
+          {
+            "name": "string",
+            "title": "string",
+            "reason": "string",
+            "influence_score": "number"
+          }
+        ]
+      },
+      "org_structure": {
+        "total_employees": "number",
+        "engineering_team_size": "number",
+        "reporting_hierarchy": "string"
+      },
+      "engagement_strategy": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "confidence": "number",
+      "data_sources": [
+        "string"
+      ]
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "company": "acme.com",
+      "buying_committee": {
+        "decision_makers": [
+          {
+            "name": "John Doe",
+            "title": "CTO",
+            "linkedin": "linkedin.com/in/johndoe",
+            "influence_score": 95
+          },
+          {
+            "name": "Emily Clarke",
+            "title": "CFO",
+            "linkedin": "linkedin.com/in/emilyclarke",
+            "influence_score": 90
+          },
+          {
+            "name": "Michael Smith",
+            "title": "CEO",
+            "linkedin": "linkedin.com/in/michaelsmith",
+            "influence_score": 95
+          }
+        ],
+        "influencers": [
+          {
+            "name": "Jane Smith",
+            "title": "VP Engineering",
+            "linkedin": "linkedin.com/in/janesmith",
+            "influence_score": 80
+          }
+        ],
+        "champions": [
+          {
+            "name": "Bob Johnson",
+            "title": "Engineering Manager",
+            "reason": "Previously used similar tools",
+            "influence_score": 60
+          }
+        ],
+        "blockers": [
+          {
+            "name": "Alice Brown",
+            "title": "Procurement Director",
+            "reason": "Budget gatekeeper",
+            "influence_score": 70
+          }
+        ]
+      },
+      "org_structure": {
+        "total_employees": 500,
+        "engineering_team_size": 50,
+        "reporting_hierarchy": "CTO -> VP Eng -> Eng Managers"
+      },
+      "engagement_strategy": "Target CTO and CFO first, build champion relationship with Eng Manager"
+    },
+    "metadata": {
+      "agent_name": "Committee Mapper",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.85,
+      "data_sources": [
+        "Apollo API",
+        "LinkedIn"
+      ]
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:49:40.162851",
+  "test_message_used": "Analyze this sample data for testing",
+  "raw_test_response": "Could you please provide the sample data you would like me to analyze?",
+  "test_error": "Response not valid JSON: Expecting value: line 1 column 1 (char 0)",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "company": "acme.com",
+      "buying_committee": {
+        "decision_makers": [
+          {
+            "name": "John Doe",
+            "title": "CTO",
+            "linkedin": "linkedin.com/in/johndoe",
+            "influence_score": 95
+          },
+          {
+            "name": "Emily Clarke",
+            "title": "CFO",
+            "linkedin": "linkedin.com/in/emilyclarke",
+            "influence_score": 90
+          },
+          {
+            "name": "Michael Smith",
+            "title": "CEO",
+            "linkedin": "linkedin.com/in/michaelsmith",
+            "influence_score": 95
+          }
+        ],
+        "influencers": [
+          {
+            "name": "Jane Smith",
+            "title": "VP Engineering",
+            "linkedin": "linkedin.com/in/janesmith",
+            "influence_score": 80
+          }
+        ],
+        "champions": [
+          {
+            "name": "Bob Johnson",
+            "title": "Engineering Manager",
+            "reason": "Previously used similar tools",
+            "influence_score": 60
+          }
+        ],
+        "blockers": [
+          {
+            "name": "Alice Brown",
+            "title": "Procurement Director",
+            "reason": "Budget gatekeeper",
+            "influence_score": 70
+          }
+        ]
+      },
+      "org_structure": {
+        "total_employees": 500,
+        "engineering_team_size": 50,
+        "reporting_hierarchy": "CTO -> VP Eng -> Eng Managers"
+      },
+      "engagement_strategy": "Target CTO and CFO first, build champion relationship with Eng Manager"
+    },
+    "metadata": {
+      "agent_name": "Committee Mapper",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.85,
+      "data_sources": [
+        "Apollo API",
+        "LinkedIn"
+      ]
+    }
+  },
+  "test_passed": true
+}

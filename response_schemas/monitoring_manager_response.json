@@ -1,0 +1,104 @@
+{
+  "agent_name": "Monitoring Manager",
+  "agent_id": "696eeacdb50537828e0aff83",
+  "agent_purpose": "manager",
+  "description": "Coordinates monitoring operations and delegates to analysis agents",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "monitoring_summary": {
+        "total_accounts_monitored": "number",
+        "engagement_stats": {
+          "emails_opened": "number",
+          "links_clicked": "number",
+          "meetings_booked": "number"
+        },
+        "follow_up_actions": [
+          {
+            "account": "string",
+            "action": "string",
+            "scheduled": "string"
+          }
+        ],
+        "crm_sync_status": "string"
+      },
+      "delegated_agents": [
+        "string"
+      ],
+      "next_check": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "confidence": "number"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "monitoring_summary": {
+        "total_accounts_monitored": 1,
+        "engagement_stats": {
+          "emails_opened": 5,
+          "links_clicked": 2,
+          "meetings_booked": 0
+        },
+        "follow_up_actions": [
+          {
+            "account": "acme.com",
+            "action": "send_follow_up",
+            "scheduled": "2026-01-21T09:00:00Z"
+          }
+        ],
+        "crm_sync_status": "pending"
+      },
+      "delegated_agents": [
+        "Engagement Monitor",
+        "Follow-up Sequencer",
+        "HubSpot Sync Agent"
+      ],
+      "next_check": "2026-01-20T15:00:00Z"
+    },
+    "metadata": {
+      "agent_name": "Monitoring Manager",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.95
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:50:19.770024",
+  "test_message_used": "Process this request and coordinate sub-agents",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "monitoring_summary": {
+        "total_accounts_monitored": 1,
+        "engagement_stats": {
+          "emails_opened": 5,
+          "links_clicked": 2,
+          "meetings_booked": 0
+        },
+        "follow_up_actions": [
+          {
+            "account": "acme.com",
+            "action": "send_follow_up",
+            "scheduled": "2026-01-21T09:00:00Z"
+          }
+        ],
+        "crm_sync_status": "pending"
+      },
+      "delegated_agents": [
+        "Engagement Monitor",
+        "Follow-up Sequencer",
+        "HubSpot Sync Agent"
+      ],
+      "next_check": "2026-01-20T15:00:00Z"
+    },
+    "metadata": {
+      "agent_name": "Monitoring Manager",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.95
+    }
+  },
+  "test_passed": true
+}

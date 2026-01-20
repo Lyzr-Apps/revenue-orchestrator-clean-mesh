@@ -1,0 +1,153 @@
+{
+  "agent_name": "Outreach Manager",
+  "agent_id": "696eeb11b50537828e0aff93",
+  "agent_purpose": "manager",
+  "description": "Coordinates outreach creation and delegates to content specialist agents",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "outreach_summary": {
+        "messages_generated": "string",
+        "quality_score_average": "number",
+        "approved_count": "string",
+        "revision_count": "string",
+        "total_processing_time": "string"
+      },
+      "campaign_metrics": {
+        "personalization_level": "string",
+        "target_personas": [
+          "string"
+        ],
+        "content_variants": "string",
+        "estimated_effectiveness": "number"
+      },
+      "delegated_tasks": [
+        {
+          "agent": "string",
+          "task": "string",
+          "status": "string",
+          "priority": "string"
+        }
+      ],
+      "ready_to_send": {
+        "approved_messages": "string",
+        "scheduled_sends": [
+          "any"
+        ],
+        "next_actions": [
+          "string"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "outreach_summary": {
+        "messages_generated": "1",
+        "quality_score_average": 85,
+        "approved_count": "0",
+        "revision_count": "1",
+        "total_processing_time": "5 minutes"
+      },
+      "campaign_metrics": {
+        "personalization_level": "medium",
+        "target_personas": [
+          "Sales Strategist"
+        ],
+        "content_variants": "1",
+        "estimated_effectiveness": 88
+      },
+      "delegated_tasks": [
+        {
+          "agent": "Persona Matcher",
+          "task": "Matched John Doe to a persona and determined messaging angles.",
+          "status": "completed",
+          "priority": "high"
+        },
+        {
+          "agent": "Content Generator",
+          "task": "Generated LinkedIn outreach message emphasizing sales efficiency and remote team management.",
+          "status": "completed",
+          "priority": "high"
+        },
+        {
+          "agent": "QA Gatekeeper",
+          "task": "Reviewed LinkedIn outreach message for quality and tone.",
+          "status": "completed",
+          "priority": "high"
+        }
+      ],
+      "ready_to_send": {
+        "approved_messages": "0",
+        "scheduled_sends": [],
+        "next_actions": [
+          "Revise message for tone and personalization improvements."
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Outreach Manager",
+      "timestamp": "2023-11-29T10:14:23Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:44:00.492894",
+  "test_message_used": "Process this request and coordinate sub-agents",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "outreach_summary": {
+        "messages_generated": "1",
+        "quality_score_average": 85,
+        "approved_count": "0",
+        "revision_count": "1",
+        "total_processing_time": "5 minutes"
+      },
+      "campaign_metrics": {
+        "personalization_level": "medium",
+        "target_personas": [
+          "Sales Strategist"
+        ],
+        "content_variants": "1",
+        "estimated_effectiveness": 88
+      },
+      "delegated_tasks": [
+        {
+          "agent": "Persona Matcher",
+          "task": "Matched John Doe to a persona and determined messaging angles.",
+          "status": "completed",
+          "priority": "high"
+        },
+        {
+          "agent": "Content Generator",
+          "task": "Generated LinkedIn outreach message emphasizing sales efficiency and remote team management.",
+          "status": "completed",
+          "priority": "high"
+        },
+        {
+          "agent": "QA Gatekeeper",
+          "task": "Reviewed LinkedIn outreach message for quality and tone.",
+          "status": "completed",
+          "priority": "high"
+        }
+      ],
+      "ready_to_send": {
+        "approved_messages": "0",
+        "scheduled_sends": [],
+        "next_actions": [
+          "Revise message for tone and personalization improvements."
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Outreach Manager",
+      "timestamp": "2023-11-29T10:14:23Z"
+    }
+  },
+  "test_passed": true
+}

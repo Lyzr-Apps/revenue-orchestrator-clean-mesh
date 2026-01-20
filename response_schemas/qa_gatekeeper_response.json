@@ -1,0 +1,168 @@
+{
+  "agent_name": "QA Gatekeeper",
+  "agent_id": "696ee9ccb50537828e0aff6a",
+  "agent_purpose": "analyzer",
+  "description": "Reviews outreach content quality and provides approval recommendations",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "quality_score": "number",
+      "approval_status": "string",
+      "quality_checks": {
+        "accuracy": {
+          "passed": "boolean",
+          "issues": [
+            "any"
+          ]
+        },
+        "tone": {
+          "passed": "boolean",
+          "issues": [
+            "string"
+          ]
+        },
+        "compliance": {
+          "passed": "boolean",
+          "issues": [
+            "any"
+          ]
+        },
+        "personalization": {
+          "passed": "boolean",
+          "issues": [
+            "any"
+          ]
+        },
+        "grammar": {
+          "passed": "boolean",
+          "issues": [
+            "any"
+          ]
+        }
+      },
+      "improvement_suggestions": [
+        {
+          "type": "string",
+          "suggestion": "string",
+          "priority": "string"
+        }
+      ],
+      "flagged_content": [
+        {
+          "text": "string",
+          "reason": "string",
+          "severity": "string"
+        }
+      ],
+      "final_recommendation": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "quality_score": 75,
+      "approval_status": "needs_revision",
+      "quality_checks": {
+        "accuracy": {
+          "passed": true,
+          "issues": []
+        },
+        "tone": {
+          "passed": false,
+          "issues": [
+            "The tone is somewhat informal; might need to be more professional depending on the recipient."
+          ]
+        },
+        "compliance": {
+          "passed": true,
+          "issues": []
+        },
+        "personalization": {
+          "passed": true,
+          "issues": []
+        },
+        "grammar": {
+          "passed": true,
+          "issues": []
+        }
+      },
+      "improvement_suggestions": [
+        {
+          "type": "tone",
+          "suggestion": "Consider using a more formal greeting and closing statement, especially if this is a first contact.",
+          "priority": "medium"
+        }
+      ],
+      "flagged_content": [
+        {
+          "text": "Hi John, I noticed your company is hiring SDRs.",
+          "reason": "Potentially informal tone for professional outreach.",
+          "severity": "info"
+        }
+      ],
+      "final_recommendation": "revise"
+    },
+    "metadata": {
+      "agent_name": "QA Gatekeeper",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:45:03.707805",
+  "test_message_used": "Analyze this sample data for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "quality_score": 75,
+      "approval_status": "needs_revision",
+      "quality_checks": {
+        "accuracy": {
+          "passed": true,
+          "issues": []
+        },
+        "tone": {
+          "passed": false,
+          "issues": [
+            "The tone is somewhat informal; might need to be more professional depending on the recipient."
+          ]
+        },
+        "compliance": {
+          "passed": true,
+          "issues": []
+        },
+        "personalization": {
+          "passed": true,
+          "issues": []
+        },
+        "grammar": {
+          "passed": true,
+          "issues": []
+        }
+      },
+      "improvement_suggestions": [
+        {
+          "type": "tone",
+          "suggestion": "Consider using a more formal greeting and closing statement, especially if this is a first contact.",
+          "priority": "medium"
+        }
+      ],
+      "flagged_content": [
+        {
+          "text": "Hi John, I noticed your company is hiring SDRs.",
+          "reason": "Potentially informal tone for professional outreach.",
+          "severity": "info"
+        }
+      ],
+      "final_recommendation": "revise"
+    },
+    "metadata": {
+      "agent_name": "QA Gatekeeper",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

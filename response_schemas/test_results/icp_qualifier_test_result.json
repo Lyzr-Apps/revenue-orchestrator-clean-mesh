@@ -1,0 +1,32 @@
+{
+  "agent_name": "ICP Qualifier",
+  "agent_id": "696ee969b50537828e0aff64",
+  "test_message": "Company: Acme Corp, Industry: B2B SaaS, Size: 50-200 employees, Revenue: $5M-$20M",
+  "expected_purpose": "icp_analysis",
+  "timestamp": "2026-01-20T02:44:23.468350",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "icp_score": 80,
+      "fit_level": "good",
+      "qualifying_factors": [
+        "B2B SaaS industry aligns with target market",
+        "Mid-size company with reasonable revenue"
+      ],
+      "disqualifying_factors": [],
+      "company_profile": {
+        "industry": "B2B SaaS",
+        "size": "50-200 employees",
+        "revenue_range": "$5M-$20M"
+      },
+      "recommendation": "accept"
+    },
+    "metadata": {
+      "agent_name": "ICP Qualifier",
+      "timestamp": "2023-10-01T00:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"icp_score\": 80,\n    \"fit_level\": \"good\",\n    \"qualifying_factors\": [\n      \"B2B SaaS industry aligns with target market\",\n      \"Mid-size company with reasonable revenue\"\n    ],\n    \"disqualifying_factors\": [],\n    \"company_profile\": {\n      \"industry\": \"B2B SaaS\",\n      \"size\": \"50-200 employees\",\n      \"revenue_range\": \"$5M-$20M\"\n    },\n    \"recommendation\": \"accept\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"ICP Qualifier\",\n    \"timestamp\": \"2023-10-01T00:00:00Z\"\n  }\n}"
+}

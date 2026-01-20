@@ -1,0 +1,51 @@
+{
+  "agent_name": "Persona Matcher",
+  "agent_id": "696ee9a23bd35d7a6606a534",
+  "test_message": "Contact: John Doe, Title: VP of Sales, Industry: B2B SaaS",
+  "expected_purpose": "persona_matching",
+  "timestamp": "2026-01-20T02:44:45.380650",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "matched_persona": {
+        "persona_name": "B2B Sales Leader",
+        "persona_type": "Decision Maker",
+        "confidence": 85
+      },
+      "messaging_angle": {
+        "primary_pain_points": [
+          "scaling sales operations",
+          "retaining top talent"
+        ],
+        "value_propositions": [
+          "data-driven insights to enhance sales strategy",
+          "tools for effective team collaboration"
+        ],
+        "recommended_tone": "consultative"
+      },
+      "contact_profile": {
+        "role": "VP of Sales",
+        "seniority": "VP",
+        "likely_priorities": [
+          "increasing revenue",
+          "improving sales team performance"
+        ]
+      },
+      "outreach_recommendations": {
+        "best_channel": "email",
+        "timing_suggestion": "mid-morning on weekdays",
+        "key_talking_points": [
+          "how our solution can streamline your sales process",
+          "strategies for maximizing team effectiveness"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Persona Matcher",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"matched_persona\": {\n      \"persona_name\": \"B2B Sales Leader\",\n      \"persona_type\": \"Decision Maker\",\n      \"confidence\": 85\n    },\n    \"messaging_angle\": {\n      \"primary_pain_points\": [\"scaling sales operations\", \"retaining top talent\"],\n      \"value_propositions\": [\"data-driven insights to enhance sales strategy\", \"tools for effective team collaboration\"],\n      \"recommended_tone\": \"consultative\"\n    },\n    \"contact_profile\": {\n      \"role\": \"VP of Sales\",\n      \"seniority\": \"VP\",\n      \"likely_priorities\": [\"increasing revenue\", \"improving sales team performance\"]\n    },\n    \"outreach_recommendations\": {\n      \"best_channel\": \"email\",\n      \"timing_suggestion\": \"mid-morning on weekdays\",\n      \"key_talking_points\": [\"how our solution can streamline your sales process\", \"strategies for maximizing team effectiveness\"]\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Persona Matcher\",\n    \"timestamp\": \"2023-10-01T12:00:00Z\"\n  }\n}"
+}

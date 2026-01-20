@@ -1,0 +1,129 @@
+{
+  "agent_name": "Persona Matcher",
+  "agent_id": "696ee9a23bd35d7a6606a534",
+  "agent_purpose": "analyzer",
+  "description": "Matches contacts to personas and determines optimal messaging angles",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "matched_persona": {
+        "persona_name": "string",
+        "persona_type": "string",
+        "confidence": "number"
+      },
+      "messaging_angle": {
+        "primary_pain_points": [
+          "string"
+        ],
+        "value_propositions": [
+          "string"
+        ],
+        "recommended_tone": "string"
+      },
+      "contact_profile": {
+        "role": "string",
+        "seniority": "string",
+        "likely_priorities": [
+          "string"
+        ]
+      },
+      "outreach_recommendations": {
+        "best_channel": "string",
+        "timing_suggestion": "string",
+        "key_talking_points": [
+          "string"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "matched_persona": {
+        "persona_name": "B2B Sales Leader",
+        "persona_type": "Decision Maker",
+        "confidence": 85
+      },
+      "messaging_angle": {
+        "primary_pain_points": [
+          "scaling sales operations",
+          "retaining top talent"
+        ],
+        "value_propositions": [
+          "data-driven insights to enhance sales strategy",
+          "tools for effective team collaboration"
+        ],
+        "recommended_tone": "consultative"
+      },
+      "contact_profile": {
+        "role": "VP of Sales",
+        "seniority": "VP",
+        "likely_priorities": [
+          "increasing revenue",
+          "improving sales team performance"
+        ]
+      },
+      "outreach_recommendations": {
+        "best_channel": "email",
+        "timing_suggestion": "mid-morning on weekdays",
+        "key_talking_points": [
+          "how our solution can streamline your sales process",
+          "strategies for maximizing team effectiveness"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Persona Matcher",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:44:45.381425",
+  "test_message_used": "Analyze this sample data for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "matched_persona": {
+        "persona_name": "B2B Sales Leader",
+        "persona_type": "Decision Maker",
+        "confidence": 85
+      },
+      "messaging_angle": {
+        "primary_pain_points": [
+          "scaling sales operations",
+          "retaining top talent"
+        ],
+        "value_propositions": [
+          "data-driven insights to enhance sales strategy",
+          "tools for effective team collaboration"
+        ],
+        "recommended_tone": "consultative"
+      },
+      "contact_profile": {
+        "role": "VP of Sales",
+        "seniority": "VP",
+        "likely_priorities": [
+          "increasing revenue",
+          "improving sales team performance"
+        ]
+      },
+      "outreach_recommendations": {
+        "best_channel": "email",
+        "timing_suggestion": "mid-morning on weekdays",
+        "key_talking_points": [
+          "how our solution can streamline your sales process",
+          "strategies for maximizing team effectiveness"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Persona Matcher",
+      "timestamp": "2023-10-01T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

@@ -1,0 +1,121 @@
+{
+  "agent_name": "Computer Use Agent",
+  "agent_id": "696eea8f3bd35d7a6606a544",
+  "agent_purpose": "assistant",
+  "description": "Executes browser automation tasks for LinkedIn engagement",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "automation_summary": {
+        "task_type": "string",
+        "actions_completed": "string",
+        "success_rate": "number",
+        "execution_time": "string"
+      },
+      "executed_actions": [
+        {
+          "action": "string",
+          "target": "string",
+          "status": "string",
+          "timestamp": "string",
+          "details": "string"
+        }
+      ],
+      "extracted_data": {
+        "profiles_visited": [
+          "any"
+        ],
+        "engagement_metrics": {
+          "likes": "number",
+          "comments": "number",
+          "shares": "number"
+        },
+        "data_collected": [
+          "any"
+        ]
+      },
+      "issues_encountered": [
+        "any"
+      ],
+      "next_steps": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "automation_summary": {
+        "task_type": "connection",
+        "actions_completed": "1",
+        "success_rate": 100,
+        "execution_time": "2 seconds"
+      },
+      "executed_actions": [
+        {
+          "action": "send_connection_request",
+          "target": "John Doe",
+          "status": "success",
+          "timestamp": "2023-10-19T12:34:56Z",
+          "details": "Connection request sent with message: 'Hi John, connecting to discuss sales automation'"
+        }
+      ],
+      "extracted_data": {
+        "profiles_visited": [],
+        "engagement_metrics": {
+          "likes": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        "data_collected": []
+      },
+      "issues_encountered": [],
+      "next_steps": "Monitor response from John Doe and follow up as necessary."
+    },
+    "metadata": {
+      "agent_name": "Computer Use Agent",
+      "timestamp": "2023-10-19T12:34:56Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:46:04.648826",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "automation_summary": {
+        "task_type": "connection",
+        "actions_completed": "1",
+        "success_rate": 100,
+        "execution_time": "2 seconds"
+      },
+      "executed_actions": [
+        {
+          "action": "send_connection_request",
+          "target": "John Doe",
+          "status": "success",
+          "timestamp": "2023-10-19T12:34:56Z",
+          "details": "Connection request sent with message: 'Hi John, connecting to discuss sales automation'"
+        }
+      ],
+      "extracted_data": {
+        "profiles_visited": [],
+        "engagement_metrics": {
+          "likes": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        "data_collected": []
+      },
+      "issues_encountered": [],
+      "next_steps": "Monitor response from John Doe and follow up as necessary."
+    },
+    "metadata": {
+      "agent_name": "Computer Use Agent",
+      "timestamp": "2023-10-19T12:34:56Z"
+    }
+  },
+  "test_passed": true
+}

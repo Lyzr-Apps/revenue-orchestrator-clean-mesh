@@ -1,0 +1,61 @@
+{
+  "agent_name": "Outreach Manager",
+  "agent_id": "696eeb11b50537828e0aff93",
+  "test_message": "Create LinkedIn outreach for John Doe, VP Sales at Acme Corp",
+  "expected_purpose": "outreach_coordinator",
+  "timestamp": "2026-01-20T02:44:00.491916",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "outreach_summary": {
+        "messages_generated": "1",
+        "quality_score_average": 85,
+        "approved_count": "0",
+        "revision_count": "1",
+        "total_processing_time": "5 minutes"
+      },
+      "campaign_metrics": {
+        "personalization_level": "medium",
+        "target_personas": [
+          "Sales Strategist"
+        ],
+        "content_variants": "1",
+        "estimated_effectiveness": 88
+      },
+      "delegated_tasks": [
+        {
+          "agent": "Persona Matcher",
+          "task": "Matched John Doe to a persona and determined messaging angles.",
+          "status": "completed",
+          "priority": "high"
+        },
+        {
+          "agent": "Content Generator",
+          "task": "Generated LinkedIn outreach message emphasizing sales efficiency and remote team management.",
+          "status": "completed",
+          "priority": "high"
+        },
+        {
+          "agent": "QA Gatekeeper",
+          "task": "Reviewed LinkedIn outreach message for quality and tone.",
+          "status": "completed",
+          "priority": "high"
+        }
+      ],
+      "ready_to_send": {
+        "approved_messages": "0",
+        "scheduled_sends": [],
+        "next_actions": [
+          "Revise message for tone and personalization improvements."
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Outreach Manager",
+      "timestamp": "2023-11-29T10:14:23Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"outreach_summary\": {\n      \"messages_generated\": \"1\",\n      \"quality_score_average\": 85,\n      \"approved_count\": \"0\",\n      \"revision_count\": \"1\",\n      \"total_processing_time\": \"5 minutes\"\n    },\n    \"campaign_metrics\": {\n      \"personalization_level\": \"medium\",\n      \"target_personas\": [\n        \"Sales Strategist\"\n      ],\n      \"content_variants\": \"1\",\n      \"estimated_effectiveness\": 88\n    },\n    \"delegated_tasks\": [\n      {\n        \"agent\": \"Persona Matcher\",\n        \"task\": \"Matched John Doe to a persona and determined messaging angles.\",\n        \"status\": \"completed\",\n        \"priority\": \"high\"\n      },\n      {\n        \"agent\": \"Content Generator\",\n        \"task\": \"Generated LinkedIn outreach message emphasizing sales efficiency and remote team management.\",\n        \"status\": \"completed\",\n        \"priority\": \"high\"\n      },\n      {\n        \"agent\": \"QA Gatekeeper\",\n        \"task\": \"Reviewed LinkedIn outreach message for quality and tone.\",\n        \"status\": \"completed\",\n        \"priority\": \"high\"\n      }\n    ],\n    \"ready_to_send\": {\n      \"approved_messages\": \"0\",\n      \"scheduled_sends\": [],\n      \"next_actions\": [\n        \"Revise message for tone and personalization improvements.\"\n      ]\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Outreach Manager\",\n    \"timestamp\": \"2023-11-29T10:14:23Z\"\n  }\n}"
+}

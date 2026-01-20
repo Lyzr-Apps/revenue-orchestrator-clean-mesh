@@ -1,0 +1,123 @@
+{
+  "agent_name": "Response Classifier",
+  "agent_id": "696ee9fa3bd35d7a6606a53b",
+  "agent_purpose": "analyzer",
+  "description": "Classifies email responses by category, sentiment, and intent",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "classification": {
+        "category": "string",
+        "sentiment": "string",
+        "intent": "string",
+        "confidence": "number"
+      },
+      "key_signals": {
+        "positive_indicators": [
+          "string"
+        ],
+        "negative_indicators": [
+          "any"
+        ],
+        "buying_signals": [
+          "any"
+        ]
+      },
+      "extracted_data": {
+        "objections": [
+          "any"
+        ],
+        "questions": [
+          "any"
+        ],
+        "requested_information": [
+          "any"
+        ]
+      },
+      "recommended_action": {
+        "action_type": "string",
+        "priority": "string",
+        "suggested_response": "string",
+        "timing": "string"
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "classification": {
+        "category": "positive",
+        "sentiment": "positive",
+        "intent": "interested",
+        "confidence": 90
+      },
+      "key_signals": {
+        "positive_indicators": [
+          "thanks for reaching out",
+          "could be interesting",
+          "schedule a call"
+        ],
+        "negative_indicators": [],
+        "buying_signals": []
+      },
+      "extracted_data": {
+        "objections": [],
+        "questions": [],
+        "requested_information": []
+      },
+      "recommended_action": {
+        "action_type": "schedule_call",
+        "priority": "high",
+        "suggested_response": "Thank you for your interest! I will reach out to schedule a call for next week.",
+        "timing": "this_week"
+      }
+    },
+    "metadata": {
+      "agent_name": "Response Classifier",
+      "timestamp": "2023-10-06T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-20T02:45:19.791415",
+  "test_message_used": "Analyze this sample data for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "classification": {
+        "category": "positive",
+        "sentiment": "positive",
+        "intent": "interested",
+        "confidence": 90
+      },
+      "key_signals": {
+        "positive_indicators": [
+          "thanks for reaching out",
+          "could be interesting",
+          "schedule a call"
+        ],
+        "negative_indicators": [],
+        "buying_signals": []
+      },
+      "extracted_data": {
+        "objections": [],
+        "questions": [],
+        "requested_information": []
+      },
+      "recommended_action": {
+        "action_type": "schedule_call",
+        "priority": "high",
+        "suggested_response": "Thank you for your interest! I will reach out to schedule a call for next week.",
+        "timing": "this_week"
+      }
+    },
+    "metadata": {
+      "agent_name": "Response Classifier",
+      "timestamp": "2023-10-06T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

@@ -1,0 +1,58 @@
+{
+  "agent_name": "Content Generator",
+  "agent_id": "696ee9b5b50537828e0aff69",
+  "test_message": "Generate LinkedIn connection request for VP Sales, pain point: sales efficiency",
+  "expected_purpose": "content_generation",
+  "timestamp": "2026-01-20T02:44:56.281827",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "generated_content": {
+        "subject_line": "Enhancing Sales Efficiency Together",
+        "email_body": "Hi [Name],\n\nI recently came across your work as the VP of Sales and was truly impressed by your focus on driving sales effectiveness. I believe we share a mutual interest in optimizing sales processes and would love to connect to explore potential synergies.\n\nBest regards,\n[Your Name]",
+        "linkedin_message": "Hi [Name],\n\nI've been following your leadership in improving sales efficiency and would love to connect to learn more and share insights on enhancing sales performance.\n\nLooking forward to connecting,\n[Your Name]",
+        "call_to_action": "Connect with me on LinkedIn to discuss sales efficiency strategies."
+      },
+      "personalization_elements": {
+        "company_specific": [
+          "VP Sales at [Company]",
+          "Focus on sales effectiveness"
+        ],
+        "role_specific": [
+          "Leadership in sales processes",
+          "Experience in driving sales efficiency"
+        ],
+        "pain_point_addressed": [
+          "Optimizing sales processes",
+          "Enhancing sales performance"
+        ]
+      },
+      "content_variants": [
+        {
+          "variant_type": "formal",
+          "subject": "Enhancing Sales Efficiency",
+          "preview": "Hi [Name], I've been following your leadership in improving sales efficiency..."
+        },
+        {
+          "variant_type": "casual",
+          "subject": "Connecting with a Sales Efficiency Expert",
+          "preview": "Hey [Name], I'd love to connect and chat about boosting sales efficiency..."
+        },
+        {
+          "variant_type": "direct",
+          "subject": "Let's Discuss Sales Efficiency",
+          "preview": "Hi [Name], Let's connect to discuss sales performance strategies..."
+        }
+      ],
+      "optimization_score": 87,
+      "suggested_send_time": "Tuesday 10:00 AM"
+    },
+    "metadata": {
+      "agent_name": "Content Generator",
+      "timestamp": "2023-11-04T15:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"generated_content\": {\n      \"subject_line\": \"Enhancing Sales Efficiency Together\",\n      \"email_body\": \"Hi [Name],\\n\\nI recently came across your work as the VP of Sales and was truly impressed by your focus on driving sales effectiveness. I believe we share a mutual interest in optimizing sales processes and would love to connect to explore potential synergies.\\n\\nBest regards,\\n[Your Name]\",\n      \"linkedin_message\": \"Hi [Name],\\n\\nI've been following your leadership in improving sales efficiency and would love to connect to learn more and share insights on enhancing sales performance.\\n\\nLooking forward to connecting,\\n[Your Name]\",\n      \"call_to_action\": \"Connect with me on LinkedIn to discuss sales efficiency strategies.\"\n    },\n    \"personalization_elements\": {\n      \"company_specific\": [\"VP Sales at [Company]\", \"Focus on sales effectiveness\"],\n      \"role_specific\": [\"Leadership in sales processes\", \"Experience in driving sales efficiency\"],\n      \"pain_point_addressed\": [\"Optimizing sales processes\", \"Enhancing sales performance\"]\n    },\n    \"content_variants\": [\n      {\n        \"variant_type\": \"formal\",\n        \"subject\": \"Enhancing Sales Efficiency\",\n        \"preview\": \"Hi [Name], I've been following your leadership in improving sales efficiency...\"\n      },\n      {\n        \"variant_type\": \"casual\",\n        \"subject\": \"Connecting with a Sales Efficiency Expert\",\n        \"preview\": \"Hey [Name], I'd love to connect and chat about boosting sales efficiency...\"\n      },\n      {\n        \"variant_type\": \"direct\",\n        \"subject\": \"Let's Discuss Sales Efficiency\",\n        \"preview\": \"Hi [Name], Let's connect to discuss sales performance strategies...\"\n      }\n    ],\n    \"optimization_score\": 87,\n    \"suggested_send_time\": \"Tuesday 10:00 AM\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Content Generator\",\n    \"timestamp\": \"2023-11-04T15:00:00Z\"\n  }\n}"
+}

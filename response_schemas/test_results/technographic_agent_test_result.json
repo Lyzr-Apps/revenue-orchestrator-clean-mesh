@@ -1,0 +1,48 @@
+{
+  "agent_name": "Technographic Agent",
+  "agent_id": "696ee97cb50537828e0aff65",
+  "test_message": "Research tech stack for acme.com",
+  "expected_purpose": "tech_stack_analysis",
+  "timestamp": "2026-01-20T02:49:32.840925",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "company": "acme.com",
+      "tech_stack": {
+        "detected_technologies": [
+          {
+            "name": "Salesforce",
+            "category": "CRM",
+            "confidence": 0.95
+          },
+          {
+            "name": "HubSpot",
+            "category": "Marketing Automation",
+            "confidence": 0.9
+          }
+        ],
+        "integration_opportunities": [
+          {
+            "technology": "Salesforce",
+            "opportunity": "Native CRM integration",
+            "priority": "high"
+          }
+        ],
+        "tech_score": 85,
+        "stack_maturity": "advanced",
+        "gaps": [
+          "No AI-powered analytics tool detected"
+        ]
+      }
+    },
+    "metadata": {
+      "agent_name": "Technographic Agent",
+      "timestamp": "2026-01-20T10:00:00Z",
+      "confidence": 0.9,
+      "data_source": "Apollo API"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"company\": \"acme.com\",\n    \"tech_stack\": {\n      \"detected_technologies\": [\n        {\"name\": \"Salesforce\", \"category\": \"CRM\", \"confidence\": 0.95},\n        {\"name\": \"HubSpot\", \"category\": \"Marketing Automation\", \"confidence\": 0.90}\n      ],\n      \"integration_opportunities\": [\n        {\"technology\": \"Salesforce\", \"opportunity\": \"Native CRM integration\", \"priority\": \"high\"}\n      ],\n      \"tech_score\": 85,\n      \"stack_maturity\": \"advanced\",\n      \"gaps\": [\"No AI-powered analytics tool detected\"]\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Technographic Agent\",\n    \"timestamp\": \"2026-01-20T10:00:00Z\",\n    \"confidence\": 0.90,\n    \"data_source\": \"Apollo API\"\n  }\n}"
+}
